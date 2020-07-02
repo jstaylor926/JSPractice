@@ -1,0 +1,20 @@
+CW 6
+
+
+1.	Write a JavaScript program to generate the first “n” Fibonacci numbers. 
+Hint: Use prompt to get the user input 
+Fibonacci sequence is a series of number starting from 0,1,1,2,3,5,8,13,21,34….. 
+
+
+2.	Write a JavaScript program to generate the following pattern but the number of rows should be user input. 
+$
+$$
+$$$
+$$$$
+$$$$$ 
+
+
+3.	Write a JavaScript to multiple 2 square matrices (3,3). You can use any numbers as elements of the matrix. 
+
+
+4.	Write a JavaScript program to find if a given word is a palindrome or not. Word is given by user via prompt command.

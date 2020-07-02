@@ -1,0 +1,101 @@
+Javascript is client-side. Communicates with web browser allowing user web page interactivity
+Binding or variable:
+	let caught = 5*5;
+console.log function writes out its arguments to some text output device.  Output lands in the JavaScript console.  It is hidden by default.  
+Math.max takes any amount of number arguments and gives back the greatest.
+
+console.log(Math.max(2,4);
+// -> 4
+
+Control Flow
+
+When the program has one or more statements they are executed top to bottom.  
+Ask user for a number the shows the square:
+
+	let theNumber - Number(prompt("Pick a number"));
+	console.log("Your number is the square root of " + theNumber * theNumber);
+
+**Number converts a value to a number
+
+	let theNumber - Number(prompt("Pick a number"));
+	if (!Number.isNan(theNumber)) {
+	console.log("Your number is the square root of " + theNumber * theNumber);
+	}
+	
+**Number.isNan is standard JS function that returns true if the argument if NaN (Not-a-Number)
+
+While Loops:
+
+	let number = 0;
+	while (number <= 12) {
+		console.log(number);
+		number = number +2;
+	}
+
+This shows the 2^10 of a number.
+	let  result  =  1; let  counter  =  0;
+	while  (counter  <  10)  {
+	       result  =  result  *  2; counter  =  counter  +  1;
+	}
+	console.log(result);
+	//  →  1024
+	
+A do loop.  Similar structure to while loop but will always execute the body at least once.
+
+	let yourName;
+	do {
+		yourName = prompt("who are you");
+	} while (!yourName);
+	console.log(yourName);
+	
+
+Functions
+
+Regular binding where the value of the binding is a function.  This code defines square to refer to a function that produces the square of a given number
+
+    const square = function(x) {
+        return x*x;
+    }
+    console.log(square(12));
+    // -> 144
+
+    A function is created with an expression that starts with the keyword function.  
+
+    const makeNoise = function(){
+        console.log("Pling!);
+    }
+    makeNoise();
+
+    const power = function(base, exponent){
+        let result = 1;
+        for (let count = 0; count < exponent; count++){
+            result *= base;
+        }
+        return result;
+    };
+
+    console.log(power(2,10));
+    // -> 1024
+
+return statement determines the value the function returns.
+Each binding has a scope, which is the part of the program i which the binding is visible.  
+let and const are in fact local to the block that they are declared in, so if one is inside of a loop the before and after the loop cannot "see" it. 
+var keyword is visible throughout the whole function that they appear in.
+
+Function value can do all the things that other values can do -- you can use it in arbitrary expressions, not just call it.  
+A binding that holds a function is still just a regular binding and can, if not constant, be assigned a new value.
+    let launchMissiles = function () {
+        missileSystem.launch("now")
+    };
+    if (safeMode) {
+        launchMissiles = function () {
+
+        }
+    }
+
+Declare a function differently with
+    function square (x){
+        return x*x;
+
+    }
+
